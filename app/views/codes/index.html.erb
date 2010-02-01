@@ -1,0 +1,9 @@
+<h1>All codes</h1>
+
+<p>
+  <%= link_to 'Create new code', new_code_path %>
+</p>
+
+<% @codes.each do |code| %>
+  <%= render 'code', :code => code, :simple => true %>
+<% end %>

@@ -1,0 +1,222 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (27.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (14.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20100201210300)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "codes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar(255), "size" integer, "level" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100201210300')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("codes")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20100201210300)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "codes"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100201210300'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20100201210300)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "codes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar(255), "size" integer DEFAULT 4, "level" varchar(255) DEFAULT 'h', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100201210300')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("codes")[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:09:26) [GET]
+  [4;36;1mCode Load (0.4ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Completed in 31ms (View: 27, DB: 0) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-01 22:09:29) [GET]
+Rendering template within layouts/codes
+Rendering codes/new
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#create (for 127.0.0.1 at 2010-02-01 22:09:33) [POST]
+  Parameters: {"commit"=>"Create", "code"=>{"size"=>"4", "level"=>"h", "text"=>"Soleone"}, "authenticity_token"=>"uoupKrrMdz/I2O4OX7QQeONII6ZG3JB4dGFkKWKMJkU="}
+  [4;35;1mCode Create (0.4ms)[0m   [0mINSERT INTO "codes" ("size", "created_at", "updated_at", "text", "level") VALUES(4, '2010-02-01 21:09:33', '2010-02-01 21:09:33', 'Soleone', 'h')[0m
+Redirected to http://localhost:3000/codes/1
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/codes]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-01 22:09:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCode Load (0.2ms)[0m   [0;1mSELECT * FROM "codes" WHERE ("codes"."id" = 1) [0m
+Rendering template within layouts/codes
+Rendering codes/show
+
+ActionView::TemplateError (uninitialized constant Code::RQRCode) on line #17 of app/views/codes/show.html.erb:
+14: </p>
+15: 
+16: <table class="qrcode">
+17:   <% @code.qrcode.modules.each_index do |x| %>
+18:     <tr>  
+19:       <% @code.qrcode.modules.each_index do |y| %>
+20:         <% if @code.qrcode.is_dark(x,y) %>
+
+    app/models/code.rb:5:in `qrcode'
+    app/views/codes/show.html.erb:17
+    app/controllers/codes_controller.rb:18:in `show'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-01 22:10:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCode Load (0.2ms)[0m   [0;1mSELECT * FROM "codes" WHERE ("codes"."id" = 1) [0m
+Rendering template within layouts/codes
+Rendering codes/show
+Completed in 600ms (View: 595, DB: 0) | 200 OK [http://localhost/codes/1]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:10:15) [GET]
+  [4;35;1mCode Load (0.4ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-01 22:10:17) [GET]
+Rendering template within layouts/codes
+Rendering codes/new
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#create (for 127.0.0.1 at 2010-02-01 22:10:24) [POST]
+  Parameters: {"commit"=>"Create", "code"=>{"size"=>"4", "level"=>"h", "text"=>"Spiderman"}, "authenticity_token"=>"uoupKrrMdz/I2O4OX7QQeONII6ZG3JB4dGFkKWKMJkU="}
+  [4;36;1mCode Create (0.5ms)[0m   [0;1mINSERT INTO "codes" ("size", "created_at", "updated_at", "text", "level") VALUES(4, '2010-02-01 21:10:24', '2010-02-01 21:10:24', 'Spiderman', 'h')[0m
+Redirected to http://localhost:3000/codes/2
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/codes]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-01 22:10:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCode Load (0.2ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."id" = 2) [0m
+Rendering template within layouts/codes
+Rendering codes/show
+Completed in 526ms (View: 521, DB: 0) | 200 OK [http://localhost/codes/2]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:10:27) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:15:30) [GET]
+  [4;35;1mCode Load (0.5ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Rendered codes/_code (510.7ms)
+Rendered codes/_code (506.9ms)
+Completed in 1033ms (View: 1029, DB: 0) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:15:41) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Rendered codes/_code (509.8ms)
+Rendered codes/_code (515.4ms)
+Completed in 1036ms (View: 1031, DB: 0) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:16:03) [GET]
+  [4;35;1mCode Load (0.5ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Rendered codes/_code (511.2ms)
+Rendered codes/_code (516.2ms)
+Completed in 1039ms (View: 1034, DB: 0) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:16:23) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Rendered codes/_code (509.6ms)
+Rendered codes/_code (510.8ms)
+Completed in 1031ms (View: 1027, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-01 22:16:25) [GET]
+Rendering template within layouts/codes
+Rendering codes/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#create (for 127.0.0.1 at 2010-02-01 22:16:35) [POST]
+  Parameters: {"commit"=>"Create", "code"=>{"size"=>"16", "level"=>"h", "text"=>"Hans Solo"}, "authenticity_token"=>"uoupKrrMdz/I2O4OX7QQeONII6ZG3JB4dGFkKWKMJkU="}
+  [4;35;1mCode Create (0.4ms)[0m   [0mINSERT INTO "codes" ("size", "created_at", "updated_at", "text", "level") VALUES(16, '2010-02-01 21:16:35', '2010-02-01 21:16:35', 'Hans Solo', 'h')[0m
+Redirected to http://localhost:3000/codes/3
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/codes]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-01 22:16:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mCode Load (0.2ms)[0m   [0;1mSELECT * FROM "codes" WHERE ("codes"."id" = 3) [0m
+Rendering template within layouts/codes
+Rendering codes/show
+Rendered codes/_code (3335.7ms)
+Completed in 3376ms (View: 3370, DB: 0) | 200 OK [http://localhost/codes/3]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-01 22:16:45) [GET]
+  [4;35;1mCode Load (0.5ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/codes
+Rendering codes/index
+Rendered codes/_code (507.6ms)
+Rendered codes/_code (541.6ms)
+Rendered codes/_code (3304.7ms)
+Completed in 4362ms (View: 4357, DB: 1) | 200 OK [http://localhost/codes]
