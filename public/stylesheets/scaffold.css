@@ -102,7 +102,23 @@ table.qrcode td.white {
 	vertical-align: middle;
 }
 
+
 #main {
 	margin-left: 300px;
+	margin-bottom: 64px;
 	width: 600px;
+}
+
+
+#footer {
+	position: absolute;
+	position: fixed;	
+	padding: 4px 0 8px 0;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	background-color: #eee;
+	border-top: 1px solid #ccc;
+	z-index: 4;
 }

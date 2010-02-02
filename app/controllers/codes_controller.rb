@@ -45,7 +45,7 @@ class CodesController < ApplicationController
     respond_to do |format|
       if @code.save
         flash[:notice] = 'Code was successfully created.'
-        format.html { redirect_to(@code) }
+        format.html { redirect_to(codes_path) }
         format.xml  { render :xml => @code, :status => :created, :location => @code }
       else
         format.html { render :action => "new" }

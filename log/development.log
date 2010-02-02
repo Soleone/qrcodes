@@ -553,3 +553,509 @@ Rendering template within layouts/application
 Rendering codes/show
 Rendered codes/_code (510.5ms)
 Completed in 518ms (View: 513, DB: 0) | 200 OK [http://localhost/codes/5]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:51:08) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (514.3ms)
+Rendered codes/_code (510.6ms)
+Rendered codes/_code (3303.6ms)
+
+ActionView::TemplateError (code length overflow. (212>16)) on line #16 of app/views/codes/_code.html.erb:
+13: <% end %>
+14: 
+15: <table class="qrcode">
+16:   <% code.qrcode.modules.each_index do |x| %>
+17:     <tr>  
+18:       <% code.qrcode.modules.each_index do |y| %>
+19:         <% if code.qrcode.is_dark(x,y) %>
+
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:338:in `create_data'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:167:in `make_impl'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:196:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `each'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:145:in `make'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:85:in `initialize'
+    app/models/code.rb:5:in `new'
+    app/models/code.rb:5:in `qrcode'
+    app/views/codes/_code.html.erb:16
+    app/views/codes/index.html.erb:8
+    app/views/codes/index.html.erb:7:in `each'
+    app/views/codes/index.html.erb:7
+    app/controllers/codes_controller.rb:7:in `index'
+
+Rendered rescues/_trace (56.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:51:17) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.1ms)
+Rendered codes/_code (522.3ms)
+Rendered codes/_code (3308.0ms)
+
+ActionView::TemplateError (code length overflow. (212>16)) on line #16 of app/views/codes/_code.html.erb:
+13: <% end %>
+14: 
+15: <table class="qrcode">
+16:   <% code.qrcode.modules.each_index do |x| %>
+17:     <tr>  
+18:       <% code.qrcode.modules.each_index do |y| %>
+19:         <% if code.qrcode.is_dark(x,y) %>
+
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:338:in `create_data'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:167:in `make_impl'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:196:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `each'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:145:in `make'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:85:in `initialize'
+    app/models/code.rb:5:in `new'
+    app/models/code.rb:5:in `qrcode'
+    app/views/codes/_code.html.erb:16
+    app/views/codes/index.html.erb:8
+    app/views/codes/index.html.erb:7:in `each'
+    app/views/codes/index.html.erb:7
+    app/controllers/codes_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:52:20) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/Users/soleone/workspace/rails/qrcode/app/views/layouts/application.html.erb:30: syntax error, unexpected ')'
+.../github.com/Soleone/qrcode", ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n  <title>"
+
+
+
+
+
+; @output_buffer.concat(( controller.action_name ).to_s); @output_buffer.concat " | QR Codes</title>\n  "
+; @output_buffer.concat(( stylesheet_link_tag 'scaffold' ).to_s); @output_buffer.concat "\n</head>\n<body>\n\n<div id=\"header\">\n  "
+
+
+
+
+; @output_buffer.concat(( image_tag 'qrcodes.png', :size => 50 ).to_s); @output_buffer.concat "\n  <h1>QR Codes</h1>\n\n  <p class=\"note\">\n    Generate QR codes for your name, your homepage, or any given text input you like.\n  </p>\n</div>\n\n<div id=\"main\">\n  <p style=\"color: green\">"
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n\n  "
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n</div>\n\n</body>\n\n<p id=\"footer\">\n  Source code can be found on Github at "
+
+
+
+
+
+; @output_buffer.concat(( link_to "http://github.com/Soleone/qrcode", ).to_s); @output_buffer.concat "\n</p>\n</html>"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/soleone/workspace/rails/qrcode/app/views/layouts/application.html.erb:35:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/soleone/workspace/rails/qrcode/app/controllers/codes_controller.rb:29:in `new'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/soleone/workspace/rails/qrcode/app/views/layouts/application.html.erb:30: syntax error, unexpected ')'
+.../github.com/Soleone/qrcode", ).to_s); @output_buffer.concat ...
+                              ^) on line #30 of app/views/layouts/application.html.erb:
+27: </body>
+28: 
+29: <p id="footer">
+30:   Source code can be found on Github at <%= link_to "http://github.com/Soleone/qrcode", %>
+31: </p>
+32: </html>
+
+    app/views/layouts/application.html.erb:35:in `compile!'
+    app/controllers/codes_controller.rb:29:in `new'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:52:35) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:53:41) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:53:54) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 82ms (View: 78, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:54:03) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:54:13) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:54:17) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:54:30) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:54:39) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:54:47) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:55:03) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#create (for 127.0.0.1 at 2010-02-02 01:55:12) [POST]
+  Parameters: {"commit"=>"Generate QR code", "code"=>{"text"=>"blaaaaaaaaaaaaaaas"}, "authenticity_token"=>"dJYY238S8WZdIwZcI8jgKr8n0rkKv+HcBQFufI3Loa8="}
+  [4;36;1mCode Create (25.8ms)[0m   [0;1mINSERT INTO "codes" ("size", "created_at", "updated_at", "text", "level") VALUES(4, '2010-02-02 00:55:12', '2010-02-02 00:55:12', 'blaaaaaaaaaaaaaaas', 'h')[0m
+Redirected to http://localhost:3000/codes/6
+Completed in 37ms (DB: 26) | 302 Found [http://localhost/codes]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-02 01:55:12) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mCode Load (0.2ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering codes/show
+Rendered codes/_code (507.6ms)
+Completed in 800ms (View: 795, DB: 0) | 200 OK [http://localhost/codes/6]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:55:16) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.3ms)
+Rendered codes/_code (517.0ms)
+Rendered codes/_code (3485.8ms)
+
+ActionView::TemplateError (code length overflow. (212>16)) on line #16 of app/views/codes/_code.html.erb:
+13: <% end %>
+14: 
+15: <table class="qrcode">
+16:   <% code.qrcode.modules.each_index do |x| %>
+17:     <tr>  
+18:       <% code.qrcode.modules.each_index do |y| %>
+19:         <% if code.qrcode.is_dark(x,y) %>
+
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:338:in `create_data'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:167:in `make_impl'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:196:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `each'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:145:in `make'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:85:in `initialize'
+    app/models/code.rb:5:in `new'
+    app/models/code.rb:5:in `qrcode'
+    app/views/codes/_code.html.erb:16
+    app/views/codes/index.html.erb:8
+    app/views/codes/index.html.erb:7:in `each'
+    app/views/codes/index.html.erb:7
+    app/controllers/codes_controller.rb:7:in `index'
+
+Rendered rescues/_trace (141.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCode Load (6.1ms)[0m   [0;1mSELECT * FROM "codes" [0m
+  [4;35;1mCode Load (0.4ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."size" = 2) LIMIT 1[0m
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" WHERE ("codes"."size" = 2) LIMIT 1[0m
+  [4;35;1mCode Update (1.3ms)[0m   [0mUPDATE "codes" SET "updated_at" = '2010-02-02 00:56:41', "size" = 4 WHERE "id" = 4[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:56:51) [GET]
+  [4;36;1mCode Load (0.8ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.4ms)
+Rendered codes/_code (510.4ms)
+Rendered codes/_code (3357.8ms)
+Rendered codes/_code (515.8ms)
+Rendered codes/_code (507.9ms)
+Rendered codes/_code (504.8ms)
+Completed in 5999ms (View: 5994, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:57:34) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (511.1ms)
+Rendered codes/_code (507.1ms)
+Rendered codes/_code (3400.1ms)
+Rendered codes/_code (509.6ms)
+Rendered codes/_code (507.3ms)
+Rendered codes/_code (506.7ms)
+Completed in 5953ms (View: 5948, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:57:40) [GET]
+  [4;36;1mCode Load (0.8ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.3ms)
+Rendered codes/_code (507.6ms)
+Rendered codes/_code (3301.4ms)
+Rendered codes/_code (508.2ms)
+Rendered codes/_code (511.1ms)
+Rendered codes/_code (503.2ms)
+Completed in 5851ms (View: 5846, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:58:41) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (510.2ms)
+Rendered codes/_code (507.2ms)
+Rendered codes/_code (3298.6ms)
+Rendered codes/_code (508.1ms)
+Rendered codes/_code (302.2ms)
+Rendered codes/_code (508.7ms)
+Completed in 5645ms (View: 5640, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:59:01) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (506.8ms)
+Rendered codes/_code (509.6ms)
+Rendered codes/_code (3290.7ms)
+Rendered codes/_code (507.8ms)
+Rendered codes/_code (514.9ms)
+Rendered codes/_code (504.3ms)
+Completed in 5844ms (View: 5839, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:59:14) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.6ms)
+Rendered codes/_code (506.4ms)
+Rendered codes/_code (3303.8ms)
+Rendered codes/_code (509.5ms)
+Rendered codes/_code (507.2ms)
+Rendered codes/_code (509.6ms)
+Completed in 5857ms (View: 5851, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:59:32) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.7ms)
+Rendered codes/_code (506.5ms)
+Rendered codes/_code (3486.4ms)
+Rendered codes/_code (507.9ms)
+Rendered codes/_code (506.0ms)
+Rendered codes/_code (508.5ms)
+Completed in 6035ms (View: 6030, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:59:43) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.4ms)
+Rendered codes/_code (506.3ms)
+Rendered codes/_code (3327.7ms)
+Rendered codes/_code (527.6ms)
+Rendered codes/_code (536.2ms)
+Rendered codes/_code (513.3ms)
+Completed in 5931ms (View: 5927, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 02:00:11) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (573.9ms)
+Rendered codes/_code (507.8ms)
+Rendered codes/_code (3748.0ms)
+Rendered codes/_code (514.4ms)
+Rendered codes/_code (510.6ms)
+Rendered codes/_code (503.7ms)
+Completed in 6369ms (View: 6364, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 02:00:32) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (581.9ms)
+Rendered codes/_code (507.4ms)
+Rendered codes/_code (3230.6ms)
+Rendered codes/_code (509.6ms)
+Rendered codes/_code (508.7ms)
+Rendered codes/_code (509.2ms)
+Completed in 5940ms (View: 5935, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 02:01:04) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.1ms)
+Rendered codes/_code (576.4ms)
+Rendered codes/_code (3384.9ms)
+Rendered codes/_code (591.7ms)
+Rendered codes/_code (523.9ms)
+Rendered codes/_code (513.6ms)
+Completed in 6109ms (View: 6105, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 02:01:19) [GET]
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.7ms)
+Rendered codes/_code (576.8ms)
+Rendered codes/_code (3229.4ms)
+Rendered codes/_code (505.7ms)
+Rendered codes/_code (508.9ms)
+Rendered codes/_code (513.2ms)
+Completed in 5935ms (View: 5930, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 02:01:38) [GET]
+  [4;36;1mCode Load (0.9ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.3ms)
+Rendered codes/_code (506.0ms)
+Rendered codes/_code (3293.3ms)
+Rendered codes/_code (505.4ms)
+Rendered codes/_code (505.9ms)
+Rendered codes/_code (597.3ms)
+Completed in 5927ms (View: 5921, DB: 1) | 200 OK [http://localhost/codes]
