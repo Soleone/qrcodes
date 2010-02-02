@@ -220,3 +220,336 @@ Rendered codes/_code (507.6ms)
 Rendered codes/_code (541.6ms)
 Rendered codes/_code (3304.7ms)
 Completed in 4362ms (View: 4357, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:37:42) [GET]
+  [4;36;1mCode Load (1.6ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (530.0ms)
+Rendered codes/_code (508.0ms)
+Rendered codes/_code (3357.7ms)
+Completed in 4606ms (View: 4587, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:38:06) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.9ms)
+Rendered codes/_code (504.6ms)
+Rendered codes/_code (3493.3ms)
+Completed in 4519ms (View: 4515, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:38:11) [GET]
+  [4;36;1mCode Load (0.6ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (516.6ms)
+Rendered codes/_code (507.4ms)
+Rendered codes/_code (3314.2ms)
+Completed in 4346ms (View: 4342, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:38:15) [GET]
+  [4;35;1mCode Load (0.5ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (520.1ms)
+Rendered codes/_code (508.6ms)
+Rendered codes/_code (3354.8ms)
+Completed in 4392ms (View: 4387, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:38:20) [GET]
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (593.3ms)
+Rendered codes/_code (511.2ms)
+Rendered codes/_code (3358.2ms)
+Completed in 4475ms (View: 4470, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:38:59) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.2ms)
+Rendered codes/_code (506.6ms)
+Rendered codes/_code (3284.4ms)
+Completed in 4311ms (View: 4307, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:39:10) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (592.0ms)
+Rendered codes/_code (509.7ms)
+Rendered codes/_code (3308.6ms)
+Completed in 4419ms (View: 4414, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:39:38) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (512.8ms)
+Rendered codes/_code (507.8ms)
+Rendered codes/_code (3277.4ms)
+Completed in 4306ms (View: 4302, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:39:55) [GET]
+  [4;36;1mCode Load (0.6ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (582.6ms)
+Rendered codes/_code (510.1ms)
+Rendered codes/_code (3322.4ms)
+Completed in 4427ms (View: 4422, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:40:17) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (511.5ms)
+Rendered codes/_code (514.7ms)
+Rendered codes/_code (3278.7ms)
+Completed in 4314ms (View: 4309, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:40:35) [GET]
+  [4;36;1mCode Load (0.6ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (599.7ms)
+Rendered codes/_code (661.4ms)
+Rendered codes/_code (3354.5ms)
+Completed in 4628ms (View: 4623, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:40:42) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (514.2ms)
+Rendered codes/_code (505.7ms)
+Rendered codes/_code (3420.3ms)
+Completed in 4453ms (View: 4448, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:42:02) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (510.8ms)
+Rendered codes/_code (582.4ms)
+Rendered codes/_code (3221.0ms)
+Completed in 4409ms (View: 4404, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:42:25) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.3ms)
+Rendered codes/_code (506.9ms)
+Rendered codes/_code (3306.8ms)
+Completed in 4335ms (View: 4330, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:42:34) [GET]
+  [4;36;1mCode Load (0.6ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.7ms)
+Rendered codes/_code (589.5ms)
+Rendered codes/_code (3245.6ms)
+Completed in 4357ms (View: 4352, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:43:01) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (513.8ms)
+Rendered codes/_code (509.5ms)
+Rendered codes/_code (3311.3ms)
+Completed in 4343ms (View: 4338, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:43:16) [GET]
+  [4;36;1mCode Load (0.6ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.8ms)
+Rendered codes/_code (504.2ms)
+Rendered codes/_code (3280.2ms)
+Completed in 4302ms (View: 4298, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:43:28) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 91ms (View: 86, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:43:54) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 85ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:44:13) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:44:27) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (508.4ms)
+Rendered codes/_code (505.3ms)
+Rendered codes/_code (3315.4ms)
+Completed in 4338ms (View: 4333, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:44:31) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (509.7ms)
+Rendered codes/_code (511.5ms)
+Rendered codes/_code (3296.4ms)
+Completed in 4325ms (View: 4321, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:44:47) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (513.0ms)
+Rendered codes/_code (508.3ms)
+Rendered codes/_code (3336.6ms)
+Completed in 4443ms (View: 4361, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:44:56) [GET]
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (511.6ms)
+Rendered codes/_code (511.3ms)
+Rendered codes/_code (3280.6ms)
+Completed in 4311ms (View: 4307, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#index (for 127.0.0.1 at 2010-02-02 01:45:46) [GET]
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" [0m
+Rendering template within layouts/application
+Rendering codes/index
+Rendered codes/_code (507.8ms)
+Rendered codes/_code (585.0ms)
+Rendered codes/_code (3222.2ms)
+Completed in 4323ms (View: 4318, DB: 1) | 200 OK [http://localhost/codes]
+
+
+Processing CodesController#new (for 127.0.0.1 at 2010-02-02 01:46:12) [GET]
+Rendering template within layouts/application
+Rendering codes/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/codes/new]
+
+
+Processing CodesController#create (for 127.0.0.1 at 2010-02-02 01:46:24) [POST]
+  Parameters: {"commit"=>"Create", "code"=>{"size"=>"2", "level"=>"h", "text"=>"Hello, my name is someone"}, "authenticity_token"=>"dJYY238S8WZdIwZcI8jgKr8n0rkKv+HcBQFufI3Loa8="}
+  [4;36;1mCode Create (60.8ms)[0m   [0;1mINSERT INTO "codes" ("size", "created_at", "updated_at", "text", "level") VALUES(2, '2010-02-02 00:46:24', '2010-02-02 00:46:24', 'Hello, my name is someone', 'h')[0m
+Redirected to http://localhost:3000/codes/4
+Completed in 97ms (DB: 61) | 302 Found [http://localhost/codes]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-02 01:46:24) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mCode Load (0.2ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering codes/show
+
+ActionView::TemplateError (code length overflow. (212>16)) on line #16 of app/views/codes/_code.html.erb:
+13: <% end %>
+14: 
+15: <table class="qrcode">
+16:   <% code.qrcode.modules.each_index do |x| %>
+17:     <tr>  
+18:       <% code.qrcode.modules.each_index do |y| %>
+19:         <% if code.qrcode.is_dark(x,y) %>
+
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:338:in `create_data'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:167:in `make_impl'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:196:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `each'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:195:in `get_best_mask_pattern'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:145:in `make'
+    rqrcode (0.3.2) lib/rqrcode/qrcode/qr_code.rb:85:in `initialize'
+    app/models/code.rb:5:in `new'
+    app/models/code.rb:5:in `qrcode'
+    app/views/codes/_code.html.erb:16
+    app/views/codes/show.html.erb:1
+    app/controllers/codes_controller.rb:18:in `show'
+
+Rendered rescues/_trace (130.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CodesController#create (for 127.0.0.1 at 2010-02-02 01:46:32) [POST]
+  Parameters: {"commit"=>"Create", "code"=>{"size"=>"4", "level"=>"h", "text"=>"Hello, my name is someone"}, "authenticity_token"=>"dJYY238S8WZdIwZcI8jgKr8n0rkKv+HcBQFufI3Loa8="}
+  [4;36;1mCode Create (0.4ms)[0m   [0;1mINSERT INTO "codes" ("size", "created_at", "updated_at", "text", "level") VALUES(4, '2010-02-02 00:46:32', '2010-02-02 00:46:32', 'Hello, my name is someone', 'h')[0m
+Redirected to http://localhost:3000/codes/5
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/codes]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-02 01:46:32) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mCode Load (0.3ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering codes/show
+Rendered codes/_code (511.0ms)
+Completed in 519ms (View: 514, DB: 0) | 200 OK [http://localhost/codes/5]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-02 01:46:48) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mCode Load (0.2ms)[0m   [0;1mSELECT * FROM "codes" WHERE ("codes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering codes/show
+Rendered codes/_code (510.9ms)
+Completed in 522ms (View: 517, DB: 0) | 200 OK [http://localhost/codes/5]
+
+
+Processing CodesController#edit (for 127.0.0.1 at 2010-02-02 01:46:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mCode Load (0.2ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering codes/edit
+Completed in 38ms (View: 33, DB: 0) | 200 OK [http://localhost/codes/5/edit]
+
+
+Processing CodesController#update (for 127.0.0.1 at 2010-02-02 01:46:53) [PUT]
+  Parameters: {"commit"=>"Update", "code"=>{"size"=>"4", "level"=>"h", "text"=>"Hello, my name is someone"}, "authenticity_token"=>"dJYY238S8WZdIwZcI8jgKr8n0rkKv+HcBQFufI3Loa8=", "id"=>"5"}
+  [4;36;1mCode Load (0.2ms)[0m   [0;1mSELECT * FROM "codes" WHERE ("codes"."id" = 5) [0m
+Redirected to http://localhost:3000/codes/5
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/codes/5]
+
+
+Processing CodesController#show (for 127.0.0.1 at 2010-02-02 01:46:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mCode Load (0.2ms)[0m   [0mSELECT * FROM "codes" WHERE ("codes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering codes/show
+Rendered codes/_code (510.5ms)
+Completed in 518ms (View: 513, DB: 0) | 200 OK [http://localhost/codes/5]

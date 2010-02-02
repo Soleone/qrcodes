@@ -53,6 +53,8 @@ a:hover { color: #fff; background-color:#000; }
 }
 
 
+
+/* User added styles */
 table.qrcode {
   border-width: 0;
   border-style: none;
@@ -77,4 +79,30 @@ table.qrcode td.black {
 
 table.qrcode td.white {
 	background-color: #fff;
+}
+
+.note {
+	font-size: 11px;
+	font-style: italic;
+	color: #666;
+}
+
+#header {
+	float: left;
+	text-align: center;
+	margin-bottom: 48px;
+	width: 200px;
+}
+
+#header h1 {
+	font-size: 48px;
+}
+
+#header * {
+	vertical-align: middle;
+}
+
+#main {
+	margin-left: 300px;
+	width: 600px;
 }
